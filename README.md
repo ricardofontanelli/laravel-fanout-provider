@@ -1,4 +1,4 @@
-# LaravelFanout
+# Laravel Fanout
 A simple and lightweight Laravel 4.2 and Laravel 5.* wrapper to interact with Fanout Service (fanout.io). Fanout is a SAAS that makes easy to build apps and APIs with realtime updates.
 
 ## Get Started:
@@ -79,7 +79,7 @@ Create a file called fanout.html like that, pay attention to change the informat
 </html>
 ```
 
-Now you can use it by ```php artisan tinker``` and run: 
+Now you can send your first message usign ```php artisan tinker``` and run: 
 ```php
 // Send a notification
 Fanout::publish('my-channel', 'My first realtime message using Fanout.io!!');
