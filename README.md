@@ -9,13 +9,13 @@ A simple and lightweight Laravel 4.2 and Laravel 5.* wrapper to interact with Fa
 ## Installation
 The Laravel Fanout Service Provider can be installed via ...
 ```sh 
-composer require ricardofontanelli/laravel-fanout:1.0 
+composer require ricardofontanelli/laravel-fanout-provider:1.0 
 ```
- or [Composer](http://getcomposer.org) by requiring the `ricardofontanelli/laravel-fanout` package in your project's `composer.json`
+ or [Composer](http://getcomposer.org) by requiring the `ricardofontanelli/laravel-fanout-provider` package in your project's `composer.json`
 ```json
 {
     "require": {
-        "ricardofontanelli/laravel-fanout": "1.0"
+        "ricardofontanelli/laravel-fanout-provider": "1.0"
     }
 }
 ```
@@ -49,9 +49,9 @@ After that, run the command above to publish the Fanout config file.
 ## Publishing the package
 Now, you should publish the package to generate the config file, after that, edit the config file with your Telegram Bot credentials.
 ### Laravel 4.2
-The config file will be generate here: ```app/config/packages/ricardofontanelli/laravel-fanout/config.php```
+The config file will be generate here: ```app/config/packages/ricardofontanelli/laravel-fanout-provider/config.php```
 ```php 
-php artisan config:publish ricardofontanelli/laravel-fanout
+php artisan config:publish ricardofontanelli/laravel-fanout-provider
 ```
 ### Laravel 5.*
 The config file will be generate here: ```app/config/fanout.php```

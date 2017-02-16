@@ -32,7 +32,7 @@ class FanoutServiceProvider extends ServiceProvider
         
         // Laravel 4.x compatibility
         if (version_compare($app::VERSION, '5.0') < 0) {
-            $this->package('ricardofontanelli/laravel-fanout', static::$abstract);
+            $this->package('ricardofontanelli/laravel-fanout-provider', static::$abstract);
         } else {
             // the default configuration file
             $this->publishes([
