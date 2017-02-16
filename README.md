@@ -32,7 +32,7 @@ In Laravel find the `providers` key in your `config/app.php` and register the La
 ```php
     'providers' => array(
         // ...
-        'RicardoFontanelli\LaravelTelegram\FanoutServiceProvider',
+        'RicardoFontanelli\LaravelFanout\FanoutServiceProvider',
     )
 ```
 

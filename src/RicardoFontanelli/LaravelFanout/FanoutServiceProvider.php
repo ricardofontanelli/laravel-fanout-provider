@@ -48,6 +48,16 @@ class FanoutServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->singleton(static::$abstract . '.config', function ($app) {
+            // provider_name::config is Laravel 4.x
+            $user_config = $app['config'][static::$abstract] ?: $app['config'][static::$abstract . '::config'];
+            // Make sure we don't crash when we did not publish the config file
+            if (is_null($user_config)) {
+                $user_config = [];
+            }
+            return $user_config;
+        });
+
         $this->app->bind('Fanout\Fanout', function ($app) {
 
             $user_config = $app[static::$abstract . '.config'];
