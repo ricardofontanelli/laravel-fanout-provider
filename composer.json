@@ -4,7 +4,7 @@
     "description": "A simple and lightweight Laravel 4.2 and Laravel 5.* wrapper to interact with Fanout Service (fanout.io). Fanout is a SAAS that makes easy to build apps and APIs with realtime updates.",
     "keywords": ["laravel", "laravel 5", "laravel 4", "fanout", "websocket", "messages", "service provider", "provider", "facade", "realtime"],
     "type": "library",
-    "license": "BSD Style",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ricardo Fontanelli",
